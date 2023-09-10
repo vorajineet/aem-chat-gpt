@@ -11,18 +11,6 @@ pool:
 
 steps:
 
-- task: JavaToolInstaller@0
-  inputs:
-    versionSpec: '6'
-    jdkArchitectureOption: 'x64'
-    jdkSourceOption: AzureStorage
-    azureResourceManagerEndpoint: myARMServiceConnection
-    azureStorageAccountName: myAzureStorageAccountName
-    azureContainerName: myAzureStorageContainerName
-    azureCommonVirtualFile: 'jdk1.6.0_45.zip'
-    jdkDestinationDirectory: '$(agent.toolsDirectory)/jdk6'
-    cleanDestinationDirectory: false
-
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
