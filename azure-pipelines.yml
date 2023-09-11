@@ -1,4 +1,14 @@
 # Maven
+- task: JavaToolInstaller@0
+  inputs:
+    versionSpec: '8'
+    jdkArchitectureOption: 'x64'
+    jdkSourceOption: 'AzureStorage'
+    azureResourceManagerEndpoint: 'Azure subscription 1(4)(d9de64c2-68ae-496f-8f33-f1c45e318134)'
+    azureStorageAccountName: 'testjdkstorage'
+    azureContainerName: 'jdkcontainer'
+    azureCommonVirtualFile: 'jdk-8u381-linux-x64.tar.gz'
+    cleanDestinationDirectory: true
 # Build your Java project and run tests with Apache Maven.
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/java
