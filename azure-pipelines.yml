@@ -24,7 +24,7 @@ steps:
         
 - task: Maven@3
   inputs:
-    mavenPomFile: '$(System.DefaultWorkingDirectory)/aem-chat-gpt-wknd/pom.xml'
+    mavenPomFile: '/pom.xml'
     publishJUnitResults: false
     javaHomeOption: 'Path'
     jdkDirectory: '/home/vsts/work/1/s/JAVA_HOME_8_X64_jdk-8u381-linux-x64_tar.gz/jdk1.8.0_381'
