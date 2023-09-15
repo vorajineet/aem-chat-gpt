@@ -13,7 +13,7 @@ steps:
 
 - task: cURLUploader@2
   inputs:
-    files: '/home/vsts/work/1/s/aem-chat-gpt-wknd/all/target/aem-guides-wknd.all-2.1.5-SNAPSHOT.zip'
+    files: '/home/vsts/.m2/repository/com/adobe/aem/guides/aem-guides-wknd.all/2.1.5-SNAPSHOT/aem-guides-wknd.all-2.1.5-SNAPSHOT.zip'
     authType: 'UserAndPass'
     username: 'jineet.vora@pwc.com'
     password: 'Pwcwelcome@123'
