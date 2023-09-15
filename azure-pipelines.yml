@@ -25,9 +25,11 @@ steps:
 - task: Maven@3
   inputs:
     mavenPomFile: 'aem-chat-gpt-wknd/pom.xml'
-    mavenOptions: '-Xmx3072m'
-    javaHomeOption: 'JDKVersion'
-    jdkVersionOption: '1.8'
-    jdkArchitectureOption: 'x64'
     publishJUnitResults: false
-    goals: 'package'
+    javaHomeOption: 'Path'
+    jdkDirectory: '/home/vsts/work/1/s/JAVA_HOME_8_X64_jdk-8u381-linux-x64_tar.gz/jdk1.8.0_381'
+    mavenVersionOption: 'Default'
+    mavenOptions: '-Xmx3072m'
+    mavenAuthenticateFeed: false
+    effectivePomSkip: false
+    sonarQubeRunAnalysis: false
