@@ -35,13 +35,6 @@ steps:
     effectivePomSkip: false
     sonarQubeRunAnalysis: false
 
-- task: DownloadBuildArtifacts@1
-  inputs:
-    buildType: 'current'
-    downloadType: 'single'
-    artifactName: '*.zip'
-    downloadPath: '$(System.ArtifactsDirectory)'
-
 - task: cURLUploader@2
   inputs:
     authType: 'UserAndPass'
