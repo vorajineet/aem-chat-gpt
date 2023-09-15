@@ -15,7 +15,7 @@ steps:
     versionSpec: '8'
     jdkArchitectureOption: 'x64'
     jdkSourceOption: 'AzureStorage'
-    azureResourceManagerEndpoint: 'Azure subscription 1(1)(d9de64c2-68ae-496f-8f33-f1c45e318134)'
+    azureResourceManagerEndpoint: 'Azure subscription 1(d9de64c2-68ae-496f-8f33-f1c45e318134)'
     azureStorageAccountName: 'testjdkstorage'
     azureContainerName: 'testjdkcontainer'
     azureCommonVirtualFile: 'jdk-8u381-linux-x64.tar.gz'
