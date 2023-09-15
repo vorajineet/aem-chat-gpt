@@ -66,30 +66,30 @@
                             <artifactId>aem-guides-wknd.core</artifactId>
                             <target>/apps/wknd-packages/application/install</target>
                         </embedded>
-                        <embedded>
+                        <!-- <embedded>
                             <groupId>com.adobe.aem.guides</groupId>
                             <artifactId>aem-guides-wknd.ui.content</artifactId>
                             <type>zip</type>
                             <target>/apps/wknd-packages/content/install</target>
-                        </embedded>
-                        <embedded>
+                        </embedded> -->
+                        <!-- <embedded>
                             <groupId>com.adobe.aem.guides</groupId>
                             <artifactId>aem-guides-wknd.ui.config</artifactId>
                             <type>zip</type>
                             <target>/apps/wknd-packages/application/install</target>
-                        </embedded>
-                        <embedded>
+                        </embedded> -->
+                        <!-- <embedded>
                             <groupId>com.adobe.aem.guides</groupId>
                             <artifactId>aem-guides-wknd.ui.content.sample</artifactId>
                             <type>zip</type>
                             <target>/apps/wknd-packages/content/install</target>
-                        </embedded>
-                        <embedded>
+                        </embedded> -->
+                        <!-- <embedded>
                             <groupId>com.adobe.aem.guides</groupId>
                             <artifactId>aem-guides-wknd-shared.ui.content</artifactId>
                             <type>zip</type>
                             <target>/apps/wknd-vendor-packages/content/install</target>
-                        </embedded>
+                        </embedded> -->
                     </embeddeds>
                 </configuration>
             </plugin>
@@ -213,24 +213,24 @@
                                     <artifactId>aem-guides-wknd.core</artifactId>
                                     <target>/apps/wknd-packages/application/install</target>
                                 </embedded>
-                                <embedded>
+                                <!-- <embedded>
                                     <groupId>com.adobe.aem.guides</groupId>
                                     <artifactId>aem-guides-wknd.ui.content</artifactId>
                                     <type>zip</type>
                                     <target>/apps/wknd-packages/content/install</target>
-                                </embedded>
-                                <embedded>
+                                </embedded> -->
+                                <!-- <embedded>
                                     <groupId>com.adobe.aem.guides</groupId>
                                     <artifactId>aem-guides-wknd.ui.config</artifactId>
                                     <type>zip</type>
                                     <target>/apps/wknd-packages/application/install</target>
-                                </embedded>
-                                <embedded>
+                                </embedded> -->
+                                <!-- <embedded>
                                     <groupId>com.adobe.aem.guides</groupId>
                                     <artifactId>aem-guides-wknd.ui.content.sample</artifactId>
                                     <type>zip</type>
                                     <target>/apps/wknd-packages/content/install</target>
-                                </embedded>
+                                </embedded> -->
                                 <embedded>
                                     <groupId>com.adobe.cq</groupId>
                                     <artifactId>core.wcm.components.content</artifactId>
@@ -272,24 +272,24 @@
             <version>${project.version}</version>
             <type>zip</type>
         </dependency>
-        <dependency>
+        <!-- <dependency>
             <groupId>com.adobe.aem.guides</groupId>
             <artifactId>aem-guides-wknd.ui.content</artifactId>
             <version>${project.version}</version>
             <type>zip</type>
-        </dependency>
-        <dependency>
+        </dependency> -->
+        <!-- <dependency>
             <groupId>com.adobe.aem.guides</groupId>
             <artifactId>aem-guides-wknd.ui.config</artifactId>
             <version>${project.version}</version>
             <type>zip</type>
-        </dependency>
-        <dependency>
+        </dependency> -->
+        <!-- <dependency>
             <groupId>com.adobe.aem.guides</groupId>
             <artifactId>aem-guides-wknd.ui.content.sample</artifactId>
             <version>${project.version}</version>
             <type>zip</type>
-        </dependency>
+        </dependency> -->
          <!-- Core Component Dependency (6.x only)-->
         <dependency>
             <groupId>com.adobe.cq</groupId>
