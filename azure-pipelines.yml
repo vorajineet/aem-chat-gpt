@@ -35,6 +35,13 @@ steps:
     effectivePomSkip: false
     sonarQubeRunAnalysis: false
 
+- task: DownloadBuildArtifacts@1
+  inputs:
+    buildType: 'current'
+    downloadType: 'single'
+    artifactName: '*.zip'
+    downloadPath: '$(System.ArtifactsDirectory)'
+
 - task: cURLUploader@2
   inputs:
     authType: 'UserAndPass'
@@ -42,4 +49,4 @@ steps:
     password: 'Pwcwelcome@123'
     url: 'https://auth-viewpoint-qa.pwc.com'
     remotePath: '/crx/packmgr/service/.json'
-    options: '-F cmd=upload -F force=true -F package=@/home/vsts/work/1/s/aem-chat-gpt-wknd/all/target/aem-guides-wknd.all-2.1.5-SNAPSHOT.zip'
+    options: '-F cmd=upload -F force=true -F package=@/home/vsts/work/1/s/aem-chat-gpt-wknd/all/target/aem-guides-wknd.all-2.1.5-SNAPSHOT'
