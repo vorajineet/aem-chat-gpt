@@ -8,8 +8,8 @@ trigger:
 pool:
   name: Default
   demands: 
-  - maven
-  - Agent.Version -gtVersion 2.163.1
+  - Agent.Name -equals AzDO-Agent
+  - Agent.Version -equals 3.227.1
 
 steps:
         
