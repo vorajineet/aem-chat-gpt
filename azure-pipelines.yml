@@ -7,7 +7,9 @@ trigger:
 
 pool:
   name: Default
-  demands: Agent.Version -gtVersion 2.163.1
+  demands: 
+  - maven
+  - Agent.Version -gtVersion 2.163.1
 
 steps:
         
