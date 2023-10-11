@@ -6,10 +6,7 @@ trigger:
 - main
 
 pool:
-  name: 'Default'
-  demands: 
-  - Agent.Name -equals AzDO-Agent
-  - Agent.Version -equals 3.227.1
+  name: Default
 
 steps:
         
