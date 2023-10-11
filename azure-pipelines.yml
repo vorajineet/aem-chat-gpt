@@ -6,8 +6,8 @@ trigger:
 - main
 
 pool:
-  vmImage: ubuntu-latest
-  #environment: VM
+  vmImage: AzDO-Agent
+  #environment: AzDO-Agent
 
 steps:
 
