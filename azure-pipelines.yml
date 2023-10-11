@@ -6,9 +6,9 @@ trigger:
 - main
 
 pool:
-  agent: AzDO-Agent
+  name: Default
   demands:
-   - agent.name -equals AzDO-Agent
+  - agent.name -equals "AzDO-Agent"
 
 steps:
         
