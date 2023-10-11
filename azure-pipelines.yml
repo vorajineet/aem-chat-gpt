@@ -6,7 +6,7 @@ trigger:
 - main
 
 pool:
-  vmImage: Default
+  vmImage: AzDO-Agent
   #name: Default
 
 steps:
