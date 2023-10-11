@@ -10,17 +10,6 @@ pool:
   environment: AzDO-Agent
 
 steps:
-
-- task: JavaToolInstaller@0
-  inputs:
-    versionSpec: '8'
-    jdkArchitectureOption: 'x64'
-    jdkSourceOption: 'AzureStorage'
-    azureResourceManagerEndpoint: 'Azure subscription 1(d9de64c2-68ae-496f-8f33-f1c45e318134)'
-    azureStorageAccountName: 'testjdkstorage'
-    azureContainerName: 'testjdkcontainer'
-    azureCommonVirtualFile: 'jdk-8u381-linux-x64.tar.gz'
-    cleanDestinationDirectory: false
         
 - task: Maven@3
   inputs:
@@ -29,18 +18,11 @@ steps:
     options: '-DskipTests'
     publishJUnitResults: false
     javaHomeOption: 'Path'
-    jdkDirectory: '/home/vsts/work/1/s/JAVA_HOME_8_X64_jdk-8u381-linux-x64_tar.gz/jdk1.8.0_381'
-    mavenVersionOption: 'Default'
+    jdkDirectory: '/home/jineetvora/jdk1.8.0_381'
+    mavenVersionOption: 'Path'
+    mavenDirectory: '/home/jineetvora/apache-maven-3.9.5'
+    mavenSetM2Home: true
     mavenOptions: '-Xmx3072m'
     mavenAuthenticateFeed: false
     effectivePomSkip: false
     sonarQubeRunAnalysis: false
-
-- task: cURLUploader@2
-  inputs:
-    authType: 'UserAndPass'
-    username: 'jineet.vora@pwc.com'
-    password: 'Pwcwelcome@123'
-    url: 'https://auth-viewpoint-qa.pwc.com'
-    remotePath: 'crx/packmgr/service/.json'
-    options: '-F cmd=upload -F force=true -F package=@/home/vsts/work/1/s/aem-chat-gpt-wknd/all/target/aem-guides-wknd.all-2.1.5-SNAPSHOT.zip'
