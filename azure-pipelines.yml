@@ -7,8 +7,7 @@ trigger:
 
 pool:
   name: Default
-  demands:
-  - agent.name -equals "AzDO-Agent"
+  demands: Agent.Version -gtVersion 2.163.1
 
 steps:
         
